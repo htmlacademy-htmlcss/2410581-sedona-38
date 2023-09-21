@@ -11,7 +11,7 @@
       <header class="main-header">
         <div class="main-header__container">
           <nav class="navigation">
-            <a class="navigation__logo">
+            <a class="navigation__logo" href="index.html">
               <img class="main-header__logo" src="#" alt="Логотип города Седона">
             </a>
 
@@ -47,12 +47,95 @@
         </div>
       </header>
 
+      <main class="main-catalog">
 
+        <section class="hotels">
+          <div class="hotels__container">
+
+            <h1 class="hotels__title">Гостиницы Седоны</h1>
+
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">
+                  <span class="visually-hidden">Главная</span>
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link">Гостиницы</a>
+              </li>
+            </ul>
+
+            <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
+
+              <fieldset class="filters__group">
+                <legend class="filters__title">Инфраструктура:</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="checkbox" name="parking" checked>
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="checkbox" name="wifi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="filters__group">
+                <legend class="filters__title">Тип жилья:</legend>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="radio" name="type-of-house" value="hotel" checked>
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="radio" name="type-of-house" value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="filters__item">
+                    <label class="control">
+                      <input class="control__input" type="radio" name="type-of-house" value="apartment">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="folters__group">
+                <legend class="filters__title">Стоимость, ₽:</legend>
+                
+              </fieldset>
+
+              <button class="filters-button button" type="submit">Применить</button>
+            </form>
+
+
+          </div>
+        </section>
+
+
+
+      </main>
 
       <footer class="main-footer">
         <div class="main-footer__container">
 
           <section class="social">
+            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="https://vk.com/htmlacademy">
