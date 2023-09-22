@@ -48,10 +48,10 @@
 
       <main class="main-catalog" data-test="catalog">
 
-        <section class="hotels">
-          <div class="hotels__container">
+        <section class="filters">
+          <div class="filters__container">
 
-            <h1 class="hotels__title">Гостиницы Седоны</h1>
+            <h1 class="filters__title">Гостиницы Седоны</h1>
 
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
@@ -117,21 +117,26 @@
               <fieldset class="filters__group">
                 <legend class="filters__title">Стоимость, ₽:</legend>
                 <p class="filters__price-group">
-                  <input type="text" name="price-from" placeholder="от">
-                  <input type="text" name="price-to" placeholder="до">
+                  <label>
+                    От <input type="text" name="price-from" placeholder="0">
+                  </label>
+                  <label>
+                    До <input type="text" name="price-to" placeholder="9000">
+                  </label>
                 </p>
                 <input type="range" min="0" max="10000" step="1000" value="9000">
               </fieldset>
 
-
               <fieldset class="filters__group">
                 <legend class="filters__title visually-hidden">Применение фильтров</legend>
                 <button class="filters__button button" type="submit">Применить</button>
-                <button class="filters__button-transparent button" type="submit">Очистить</button>
+                <button class="filters__button-transparent button" type="reset">Очистить</button>
               </fieldset>
             </form>
+
           </div>
         </section>
+
 
         <section class="gallery-hotels">
           <div class="gallery-hotels__container">
