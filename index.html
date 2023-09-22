@@ -8,22 +8,22 @@
 
     <div class="wrapper">
 
-      <header class="main-header">
+      <header class="main-header" data-text="header">
         <div class="main-header__container">
           <nav class="navigation">
             <a class="navigation__logo">
-              <img class="main-header__logo" src="#" alt="Логотип города Седона">
+              <img class="main-header__logo" src="#" alt="Логотип города Седона.">
             </a>
 
             <ul class="navigation__list">
               <li class="navigation__item navigation__item-active">
-                <a class="navigation__link">Главная</a>
+                <a class="navigation__link" href="#">Главная</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" >О Седоне</a>
+                <a class="navigation__link" href="#">О Седоне</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html" >Гостиницы</a>
+                <a class="navigation__link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
 
@@ -35,21 +35,20 @@
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#" >
-                  <span class="navigation__favorite"></span>
+                  <span class="navigation__favorite">12</span>
                   <span class="visually-hidden">Избранное</span>
                 </a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__button button" href="#" >Хочу сюда!</a>
-              </li>
             </ul>
+
+            <a href="#" class="main-header__button button">Хочу сюда!</a>
           </nav>
         </div>
       </header>
 
-      <main class="main-index">
+      <main class="main-index" data-test="main">
 
-        <section class="welcome">
+        <section class="welcome" data-test="hero">
           <div class="welcome__container">
             <h1 class="visually-hidden">Welcome to Sedona</h1>
             <img class="welcome__img-text" src="#" alt="Стилизованная надпись welcome" >
@@ -73,7 +72,7 @@
           </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages__container">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages__list">
@@ -108,7 +107,7 @@
           </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages__container">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages__list">
@@ -128,7 +127,7 @@
           </div>
         </section>
 
-        <section class="suggestion">
+        <section class="suggestion" data-test="search">
           <div class="suggestion-container">
             <h2 class="suggestion-title">Заинтересовались?</h2>
             <p class="suggestion-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -136,7 +135,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe__container">
             <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
             <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -149,7 +148,7 @@
 
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <div class="main-footer__container">
 
           <section class="social">
