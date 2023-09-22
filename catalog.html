@@ -48,10 +48,10 @@
 
       <main class="main-catalog" data-test="catalog">
 
-        <section class="filters">
-          <div class="filters__container">
+        <section class="filter">
+          <div class="filter__container">
 
-            <h1 class="filters__title">Гостиницы Седоны</h1>
+            <h1 class="filter__title">Гостиницы Седоны</h1>
 
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
@@ -127,38 +127,41 @@
                 <input type="range" min="0" max="10000" step="1000" value="9000">
               </fieldset>
 
-              <fieldset class="filters__group">
-                <legend class="filters__title visually-hidden">Применение фильтров</legend>
                 <button class="filters__button button" type="submit">Применить</button>
                 <button class="filters__button-transparent button" type="reset">Очистить</button>
-              </fieldset>
+
             </form>
 
           </div>
         </section>
 
-
         <section class="gallery-hotels">
           <div class="gallery-hotels__container">
 
-            <div class="gallery-hotels__filter">
-              <h2 class="gallery-hotels__title">Найдено гостиниц: <span class="gallery-hotels__count">38</span></h2>
+            <div class="sorting">
+              <h2 class="sorting__title">Найдено гостиниц: <span class="gallery-hotels__count">38</span></h2>
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярное</option>
                 <option value="cheap" selected>Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
-              <p class="gallery-hotels__filter-type">
-                <a class="gallery-hotels__link" href="#">
-                  <span class="visually-hidden">Показать сеткой</span>
-                </a>
-                <a class="gallery-hotels__link" href="#">
-                  <span class="visually-hidden">Показать в виде карточек</span>
-                </a>
-                <a class="gallery-hotels__link" href="#">
-                  <span class="visually-hidden">Показать списком</span>
-                </a>
-              </p>
+              <ul class="sortiring__list">
+                <li class="sortiring__item">
+                  <a href="#" class="sortiring__link">
+                    <span class="visually-hidden">Показать сеткой</span>
+                  </a>
+                </li>
+                <li class="sortiring__item">
+                  <a href="#" class="sortiring__link">
+                    <span class="visually-hidden">Показать в виде карточек</span>
+                  </a>
+                </li>
+                <li class="sortiring__item">
+                  <a href="#" class="sortiring__link">
+                    <span class="visually-hidden">Показать списком</span>
+                  </a>
+                </li>
+              </ul>
             </div>
 
             <ul class="gallery-hotels__list">
