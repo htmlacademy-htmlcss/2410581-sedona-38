@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
 
@@ -10,11 +11,12 @@
 
       <header class="main-header" data-text="header">
         <div class="main-header__container">
-          <nav class="navigation">
-            <a class="navigation__logo">
-              <img class="main-header__logo" src="images/logo.svg" alt="Логотип города Седона." width="140" height="70">
-            </a>
 
+          <a class="navigation__logo">
+            <img class="main-header__logo" src="images/logo.svg" alt="Логотип города Седона." width="140" height="70">
+          </a>
+
+          <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item navigation__item-active">
                 <a class="navigation__link" href="#">Главная</a>
@@ -29,12 +31,12 @@
 
             <ul class="navigation__list navigation__user">
               <li class="navigation__item">
-                <a class="navigation__link" href="#">
+                <a class="navigation__link navigation__link-search" href="#">
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#" >
+                <a class="navigation__link navigation__link-favorite" href="#" >
                   <span class="navigation__favorite">12</span>
                   <span class="visually-hidden">Избранное</span>
                 </a>
@@ -64,35 +66,42 @@
 
         <section class="advantages" data-test="advantages">
           <div class="advantages__container">
+
             <h2 class="visually-hidden">Преимущества</h2>
+
             <ul class="advantages__list">
-              <li class="advantages__item1 advantages__item">
-                <h3 class="advantages__title">Настоящий городок</h3>
-                <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <li class="advantages__item advantages__item1">
+                <div class="advantages__content">
+                  <h3 class="advantages__title">Настоящий городок</h3>
+                  <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="advantages__image" src="images/advantages/city.jpg" alt="Здание банка и государственные флаги на фоне гор" width="800" height="384">
               </li>
-              <li class="advantages__item-2 advantages__item">
-                <img class="advantages__image" src="images/city.jpg" alt="Здание банка и государственные флаги на фоне гор" width="800" height="384">
-              </li>
-              <li class="advantages__item3 advantages__item">
+
+              <li class="advantages__item advantages__item2">
                 <h3 class="advantages__title">Небольшая площадь</h3>
                 <p class="advantages__description">Все достопримечательности находятся очень близко</p>
               </li>
-              <li class="advantages__item4 advantages__item">
+
+              <li class="advantages__item advantages__item3">
                 <h3 class="advantages__title">Красивая дорога</h3>
                 <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="advantages__item5 advantages__item">
+
+              <li class="advantages__item advantages__item4">
                 <h3 class="advantages__title">Мало туристов</h3>
                 <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
-              <li class="advantages__item6 advantages__item">
-                <img class="advantages__image" src="images/bridge.jpg" alt="Вид на естественный каменный мост" width="800" height="384">
-              </li>
-              <li class="advantages__item7 advantages__item">
-                <h3 class="advantages__title">Там есть мост дьявола</h3>
-                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+
+              <li class="advantages__item advantages__item5">
+                <img class="advantages__image" src="images/advantages/bridge.jpg" alt="Вид на естественный каменный мост" width="800" height="384">
+                <div class="advantages__content">
+                  <h3 class="advantages__title">Там есть мост дьявола</h3>
+                  <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
               </li>
             </ul>
+
           </div>
         </section>
 
@@ -107,18 +116,15 @@
           <div class="opportunities__container">
             <h2 class="visually-hidden">Возможности</h2>
             <ul class="opportunities__list">
-              <li class="opportunities__item">
-                <img class="opportunities__image" src="images/advantages/house.svg" alt="Дом.">
+              <li class="opportunities__item opportunities__item1">
                 <h3 class="opportunities__title">Жильё</h3>
                 <p class="opportunities__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="opportunities__item">
-                <img class="opportunities__image" src="images/advantages/food.svg" alt="Бургер.">
+              <li class="opportunities__item opportunities__item2">
                 <h3 class="opportunities__title">Еда</h3>
                 <p class="opportunities__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="opportunities__item">
-                <img class="opportunities__image" src="images/advantages/souvenir.svg" alt="Сувенир.">
+              <li class="opportunities__item opportunities__item3">
                 <h3 class="opportunities__title">Сувениры</h3>
                 <p class="opportunities__text">Не только китайского, но и настоящего местного производства!</p>
               </li>
@@ -153,17 +159,17 @@
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Перейти в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
+              <a class="social__link social__link-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Перейти в Телеграм</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="social__link social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Перейти в Youtube</span>
               </a>
             </li>
