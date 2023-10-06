@@ -24,8 +24,8 @@
               <li class="navigation__item">
                 <a class="navigation__link" href="#">О Седоне</a>
               </li>
-              <li class="navigation__item">
-                <a class="navigation__link  navigation__item-active" href="#">Гостиницы</a>
+              <li class="navigation__item navigation__item-active">
+                <a class="navigation__link" href="#">Гостиницы</a>
               </li>
             </ul>
 
@@ -71,7 +71,7 @@
 
             <form class="filters" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="filters__group">
+              <fieldset class="filters__group filters__group-infrastructure">
                 <legend class="filters__title">Инфраструктура:</legend>
                 <ul class="filters__list">
                   <li class="filters__item">
@@ -95,7 +95,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filters__group">
+              <fieldset class="filters__group filters__group-type">
                 <legend class="filters__title">Тип жилья:</legend>
                 <ul class="filters__list">
                   <li class="filters__item">
@@ -119,22 +119,19 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="filters__group">
+              <fieldset class="filters__group filters__group-price">
                 <legend class="filters__title">Стоимость, ₽:</legend>
                 <p class="filters__price-group">
-                  <label>
-                    От <input class="abc" type="text" name="price-from" placeholder="0">
-                  </label>
-                  <label>
-                    До <input type="text" name="price-to" placeholder="9000">
-                  </label>
+                  <input type="text" name="price-from" placeholder="0">
+                  <input type="text" name="price-to" placeholder="9000">
                 </p>
                 <input type="range" min="0" max="10000" step="1000" value="9000">
               </fieldset>
 
+              <div class="filters__group-buttons">
                 <button class="filters__button button" type="submit">Применить</button>
                 <button class="filters__button filters__button-transparent button" type="reset">Очистить</button>
-
+              </div>
             </form>
 
           </div>
@@ -171,10 +168,12 @@
                   <span class="catalog-hotels__type-house">Гостиница</span>
                   <span class="catalog-hotels__price">От 4000 ₽</span>
                 </p>
-                <a class="link-more button" href="#">подробнее</a>
-                <button class="button-favorite button">в избранное</button>
-                <span class="stars"></span>
-                <span class="rating button">Рейтинг: 8,5</span>
+                <div class="catalog-hotels__buttons">
+                  <a class="link-more button" href="#">подробнее</a>
+                  <button class="button-favorite button">в избранное</button>
+                  <span class="stars"></span>
+                  <span class="rating button">Рейтинг: 8,5</span>
+                </div>
               </li>
 
               <li class="catalog-hotels__item">
@@ -184,10 +183,12 @@
                   <span class="catalog-hotels__type-house">Гостиница</span>
                   <span class="catalog-hotels__price">От 5000 ₽</span>
                 </p>
-                <a class="link-more button" href="#">подробнее</a>
-                <button class="button-favorite button-favorite-added button">в избранном</button>
-                <span class="stars"></span>
-                <span class="rating button">Рейтинг: 9,2</span>
+                <div class="catalog-hotels__buttons">
+                  <a class="link-more button" href="#">подробнее</a>
+                  <button class="button-favorite button-favorite-added button">в избранном</button>
+                  <span class="stars"></span>
+                  <span class="rating button">Рейтинг: 9,2</span>
+                </div>
               </li>
 
               <li class="catalog-hotels__item">
@@ -197,10 +198,12 @@
                   <span class="catalog-hotels__type-house">Гостиница</span>
                   <span class="catalog-hotels__price">От 2500 ₽</span>
                 </p>
-                <a class="link-more button" href="#">подробнее</a>
-                <button class="button-favorite button">в избранное</button>
-                <span class="stars"></span>
-                <span class="rating button">Рейтинг: 6,9</span>
+                <div class="catalog-hotels__buttons">
+                  <a class="link-more button" href="#">подробнее</a>
+                  <button class="button-favorite button">в избранное</button>
+                  <span class="stars"></span>
+                  <span class="rating button">Рейтинг: 6,9</span>
+                </div>
               </li>
 
               <li class="catalog-hotels__item">
@@ -210,10 +213,12 @@
                   <span class="catalog-hotels__type-house">Гостиница</span>
                   <span class="catalog-hotels__price">От 1500 ₽</span>
                 </p>
-                <a class="link-more button" href="#">подробнее</a>
-                <button class="button-favorite button">в избранное</button>
-                <span class="stars"></span>
-                <span class="rating button">Рейтинг: 5,0</span>
+                <div class="catalog-hotels__buttons">
+                  <a class="link-more button" href="#">подробнее</a>
+                  <button class="button-favorite button">в избранное</button>
+                  <span class="stars"></span>
+                  <span class="rating button">Рейтинг: 5,0</span>
+                </div>
               </li>
             </ul>
 
@@ -245,7 +250,7 @@
           <div class="subscribe__container subscribe__container-catalog">
             <h2 class="subscribe__title subscribe__title-catalog">Подпишитесь на рассылку</h2>
             <p class="subscribe__text subscribe__text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="subscribe__form subscribe__form-catalog" action="https://echo.htmlacademy.ru/" method="post">
               <input type="email" id="email-subscribe" name="email-for-subscribe" placeholder="Ваш e-mail">
               <button class="subscribe__button button" type="submit">Подписаться</button>
             </form>
