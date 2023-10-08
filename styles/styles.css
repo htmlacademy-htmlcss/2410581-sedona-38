@@ -691,6 +691,10 @@ body {
   line-height: 21;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  padding: 14px 20px;
+  border-radius: 4px;
+  width: 292px;
 }
 
 .sortiring__list {
