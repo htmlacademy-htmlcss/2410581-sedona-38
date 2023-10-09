@@ -24,20 +24,20 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   margin: 0;
   height: 100%;
-}
-
-[class*="__container"] {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow:
+    0 0 15px 0 rgba(0, 0, 0, 0.20);
+  background-color: #ffffff;
 }
 
 .main-index,
@@ -97,6 +97,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
+  padding: 10px 0;
 }
 
 .button {
@@ -141,6 +142,7 @@ body {
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0;
 }
 
 .navigation__link-search {
@@ -171,10 +173,6 @@ body {
   left: 7px;
 }
 
-.welcome {
-  margin-bottom: 69px;
-}
-
 .welcome__container {
   min-height: 485px;
   background-image:
@@ -194,14 +192,9 @@ body {
 }
 
 .suggestion__container {
-  width: 651px;
-  margin-bottom: 90px;
+  box-sizing: border-box;
+  padding: 69px 290px;
   text-align: center;
-}
-
-.suggestion__container2 {
-  width: 505px;
-  margin-bottom: 64px;
 }
 
 .suggestion__title {
@@ -222,10 +215,6 @@ body {
   font-weight: 400;
   line-height: 26px;
   margin: 0;
-}
-
-.advantages__container {
-  margin-bottom: 64px;
 }
 
 .advantages__list {
@@ -293,7 +282,7 @@ body {
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
   position: absolute;
-  top: 86px;
+  bottom: -30px;
   left: 57px;
 }
 
@@ -305,10 +294,6 @@ body {
 .advantages__item3:not(.advantages__title),
 .advantages__item4:not(.advantages__title) {
   color: #333333;
-}
-
-.opportunities__container {
-  margin-bottom: 96px;
 }
 
 .opportunities__list {
@@ -366,9 +351,9 @@ body {
 }
 
 .search__container {
-  width: 592px;
+  box-sizing: border-box;
+  padding: 96px 304px;
   text-align: center;
-  margin-bottom: 96px;
 }
 
 .search__title {
@@ -888,6 +873,7 @@ body {
   color: #333333;
   background-color: #F2F2F2;
   padding: 9px 22px;
+  cursor: default;
 }
 
 .button-favorite-added {
@@ -901,7 +887,6 @@ body {
   padding: 0;
   display: flex;
   gap: 8px;
-  margin-bottom: 60px;
 }
 
 .pagination__item {
@@ -940,7 +925,7 @@ body {
 
 .subscribe__container-catalog {
   background-image: none;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .subscribe__title-catalog {
