@@ -122,8 +122,10 @@
               <fieldset class="filters__group filters__group-price">
                 <legend class="filters__title">Стоимость, ₽:</legend>
                 <p class="filters__price-group">
-                  <input type="text" name="price-from" placeholder="0">
-                  <input type="text" name="price-to" placeholder="9000">
+                  <input type="text" id="price-from" name="price-from" placeholder="0">
+                  <label for="price-from">от</label>
+                  <input type="text" id="price-to" name="price-to" placeholder="9000">
+                  <label for="price-to">до</label>
                 </p>
                 <input type="range" min="0" max="10000" step="1000" value="9000">
               </fieldset>
@@ -164,61 +166,45 @@
               <li class="catalog-hotels__item">
                 <img class="catalog-hotels__image" src="images/hotels/amara-resort-spa.jpg" alt="Вид на звездное небо из пещеры." width="300" height="212">
                 <h3 class="catalog-hotels__title">Amara Resort & Spa</h3>
-                <p class="catalog-hotels__text">
-                  <span class="catalog-hotels__type-house">Гостиница</span>
-                  <span class="catalog-hotels__price">От 4000 ₽</span>
-                </p>
-                <div class="catalog-hotels__buttons">
-                  <a class="link-more catalog__button button" href="#">подробнее</a>
-                  <button class="button-favorite catalog__button button">в избранное</button>
-                  <span class="stars catalog__button stars4"></span>
-                  <span class="rating catalog__button button">Рейтинг: 8,5</span>
-                </div>
+                <span class="catalog-hotels__type-house">Гостиница</span>
+                <span class="catalog-hotels__price">От 4000 ₽</span>
+                <a class="link-more catalog__button button" href="#">подробнее</a>
+                <button class="button-favorite catalog__button button">в избранное</button>
+                <span class="stars catalog__button stars4"></span>
+                <span class="rating catalog__button button">Рейтинг: 8,5</span>
               </li>
 
               <li class="catalog-hotels__item">
                 <img class="catalog-hotels__image" src="images/hotels/villas-at-poco-diablo.jpg" alt="Гора в лучах вечернего солнца после дождя." width="300" height="212">
                 <h3 class="catalog-hotels__title">Villas at Poco Diablo</h3>
-                <p class="catalog-hotels__text">
-                  <span class="catalog-hotels__type-house">Гостиница</span>
-                  <span class="catalog-hotels__price">От 5000 ₽</span>
-                </p>
-                <div class="catalog-hotels__buttons">
-                  <a class="link-more catalog__button button" href="#">подробнее</a>
-                  <button class="button-favorite catalog__button button-favorite-added button">в избранном</button>
-                  <span class="stars catalog__button stars4"></span>
-                  <span class="rating catalog__button button">Рейтинг: 9,2</span>
-                </div>
+                <span class="catalog-hotels__type-house">Гостиница</span>
+                <span class="catalog-hotels__price">От 5000 ₽</span>
+                <a class="link-more catalog__button button" href="#">подробнее</a>
+                <button class="button-favorite catalog__button button-favorite-added button">в избранном</button>
+                <span class="stars catalog__button stars4"></span>
+                <span class="rating catalog__button button">Рейтинг: 9,2</span>
               </li>
 
               <li class="catalog-hotels__item">
                 <img class="catalog-hotels__image" src="images/hotels/desert-quail-inn.jpg" alt="Ясное солнечное утро в горах." width="300" height="212">
                 <h3 class="catalog-hotels__title">Desert Quail Inn</h3>
-                <p class="catalog-hotels__text">
-                  <span class="catalog-hotels__type-house">Гостиница</span>
-                  <span class="catalog-hotels__price">От 2500 ₽</span>
-                </p>
-                <div class="catalog-hotels__buttons">
-                  <a class="link-more catalog__button button" href="#">подробнее</a>
-                  <button class="button-favorite catalog__button button">в избранное</button>
-                  <span class="stars catalog__button stars3"></span>
-                  <span class="rating catalog__button button">Рейтинг: 6,9</span>
-                </div>
+                <span class="catalog-hotels__type-house">Гостиница</span>
+                <span class="catalog-hotels__price">От 2500 ₽</span>
+                <a class="link-more catalog__button button" href="#">подробнее</a>
+                <button class="button-favorite catalog__button button">в избранное</button>
+                <span class="stars catalog__button stars3"></span>
+                <span class="rating catalog__button button">Рейтинг: 6,9</span>
               </li>
 
               <li class="catalog-hotels__item">
                 <img class="catalog-hotels__image" src="images/hotels/greentree-inn.jpg" alt="Первые звезды после заката в горах." width="300" height="212">
                 <h3 class="catalog-hotels__title">GreenTree Inn</h3>
-                <p class="catalog-hotels__text">
-                  <span class="catalog-hotels__type-house">Гостиница</span>
-                  <span class="catalog-hotels__price">От 1500 ₽</span>
-                </p>
-                <div class="catalog-hotels__buttons">
-                  <a class="link-more catalog__button button" href="#">подробнее</a>
-                  <button class="button-favorite catalog__button button">в избранное</button>
-                  <span class="stars catalog__button stars2"></span>
-                  <span class="rating catalog__button button">Рейтинг: 5,0</span>
-                </div>
+                <span class="catalog-hotels__type-house">Гостиница</span>
+                <span class="catalog-hotels__price">От 1500 ₽</span>
+                <a class="link-more catalog__button button" href="#">подробнее</a>
+                <button class="button-favorite catalog__button button">в избранное</button>
+                <span class="stars catalog__button stars2"></span>
+                <span class="rating catalog__button button">Рейтинг: 5,0</span>
               </li>
             </ul>
 
