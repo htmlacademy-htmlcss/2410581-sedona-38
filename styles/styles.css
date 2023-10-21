@@ -575,7 +575,8 @@ body {
 
 .filters__price-group {
   display: grid;
-  grid-template-columns: 106px 37px 2px 106px 37px;
+  grid-template-columns: 143px 143px;
+  gap: 2px;
   margin-top: 0;
   margin-bottom: 36px;
 }
@@ -590,11 +591,15 @@ body {
 }
 
 .filters__price-group label:first-of-type {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 2;
+  text-align: end;
+  padding-right: 20px;
 }
 
 .filters__price-group label:last-of-type {
-  grid-area: 1 / 5/ 2 / 6;
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: end;
+  padding-right: 20px;
 }
 
 .filters__price-group input {
@@ -609,12 +614,12 @@ body {
 }
 
 .filters__price-group input:first-of-type {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 2;
   border-radius: 4px 0 0 4px;
 }
 
 .filters__price-group input:last-of-type {
-  grid-area: 1 / 4/ 2 / -1;
+  grid-area: 1 / 2 / 2 / 3;
   border-radius: 0 4px 4px 0;
 }
 
@@ -710,7 +715,7 @@ body {
   width: 292px;
 }
 
-.sortiring__list {
+.sorting__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -718,7 +723,7 @@ body {
   gap: 8px;
 }
 
-.sortiring__item {
+.sorting__item {
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
@@ -728,11 +733,11 @@ body {
   align-items: center;
 }
 
-.sortiring__item-active {
+.sorting__item-active {
   border: 2px solid #000000;
 }
 
-.sortiring__button {
+.sorting__button {
   border: none;
   width: 100%;
   height: 100%;
@@ -742,15 +747,15 @@ body {
   background-color: transparent;
 }
 
-.sortiring__button-grid {
+.sorting__button-grid {
   background-image: url("../images/sorting/grid.svg");
 }
 
-.sortiring__button-card {
+.sorting__button-card {
   background-image: url("../images/sorting/card.svg");
 }
 
-.sortiring__button-list {
+.sorting__button-list {
   background-image: url("../images/sorting/list.svg");
 }
 
@@ -763,11 +768,17 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 212px auto min-content 36px 37px;
+  grid-template-areas:
+    "image image"
+    "title title"
+    "type price"
+    "more favorite"
+    "stars raiting";
   gap: 16px 20px;
 }
 
 .catalog-hotels__image {
-  grid-area: 1 / 1 / 3 / -1;
+  grid-area: image;
 }
 
 .catalog-hotels__list {
@@ -795,15 +806,15 @@ body {
   font-weight: 700;
   line-height: 28px;
   margin: 0;
-  grid-area: 2 / 1 / 3 / -1;
+  grid-area: title;
 }
 
 .catalog-hotels__type-house {
-  grid-area: 3 / 1 / 4 / 2;
+  grid-area: type;
 }
 
 .catalog-hotels__price {
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: price;
   justify-self: end;
 }
 
@@ -830,7 +841,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   padding: 8px 26px;
-  grid-area: 4 / 1 / 5 / 2;
+  grid-area: more;
 }
 
 .button-favorite {
@@ -839,13 +850,13 @@ body {
   line-height: 20px;
   background-color: #82B3D3;
   padding: 8px 20px;
-  grid-area: 4 / 2 / 5 / 3;
+  grid-area: favorite;
 }
 
 .stars {
   width: 140px;
   height: 37px;
-  grid-area: 5 / 1 / 6 / 2;
+  grid-area: stars;
 }
 
 .stars1 {
@@ -914,7 +925,7 @@ body {
   background-color: #F2F2F2;
   padding: 9px 22px;
   cursor: default;
-  grid-area: 5 / 2 / 6 / 3;
+  grid-area: raiting;
 }
 
 .button-favorite-added {
