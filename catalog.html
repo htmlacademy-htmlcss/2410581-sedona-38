@@ -43,7 +43,7 @@
               </li>
             </ul>
 
-            <button class="main-header__button button">Хочу сюда!</button>
+            <button class="main-header__button button" type="button">Хочу сюда!</button>
           </nav>
         </div>
       </header>
@@ -60,9 +60,6 @@
                 <a class="breadcrumbs__link breadcrumbs__link-home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
-              </li>
-              <li class="breadcrumbs__item breadcrumbs__link-arrow">
-                <span></span>
               </li>
               <li class="breadcrumbs__item breadcrumbs__link-hotels">
                 <a class="breadcrumbs__link">Гостиницы</a>
@@ -151,13 +148,13 @@
               </select>
               <ul class="sorting__list">
                 <li class="sorting__item sorting__item-active">
-                  <button class="sorting__button sorting__button-grid" aria-label="Показать сеткой"></button>
+                  <button class="sorting__button sorting__button-grid" aria-label="Показать сеткой" type="button"></button>
                 </li>
                 <li class="sorting__item">
-                  <button class="sorting__button sorting__button-card" aria-label="Показать в виде карточек"></button>
+                  <button class="sorting__button sorting__button-card" aria-label="Показать в виде карточек" type="button"></button>
                 </li>
                 <li class="sorting__item">
-                  <button class="sorting__button sorting__button-list" aria-label="Показать списком"></button>
+                  <button class="sorting__button sorting__button-list" aria-label="Показать списком" type="button"></button>
                 </li>
               </ul>
             </div>
@@ -169,7 +166,7 @@
                 <span class="catalog-hotels__type-house">Гостиница</span>
                 <span class="catalog-hotels__price">От 4000 ₽</span>
                 <a class="link-more catalog__button button" href="#">подробнее</a>
-                <button class="button-favorite catalog__button button">в избранное</button>
+                <button class="button-favorite catalog__button button" type="button">в избранное</button>
                 <span class="stars catalog__button stars4"></span>
                 <span class="rating catalog__button button">Рейтинг: 8,5</span>
               </li>
@@ -180,7 +177,7 @@
                 <span class="catalog-hotels__type-house">Гостиница</span>
                 <span class="catalog-hotels__price">От 5000 ₽</span>
                 <a class="link-more catalog__button button" href="#">подробнее</a>
-                <button class="button-favorite catalog__button button-favorite-added button">в избранном</button>
+                <button class="button-favorite catalog__button button-favorite-added button" type="button">в избранном</button>
                 <span class="stars catalog__button stars4"></span>
                 <span class="rating catalog__button button">Рейтинг: 9,2</span>
               </li>
@@ -191,7 +188,7 @@
                 <span class="catalog-hotels__type-house">Гостиница</span>
                 <span class="catalog-hotels__price">От 2500 ₽</span>
                 <a class="link-more catalog__button button" href="#">подробнее</a>
-                <button class="button-favorite catalog__button button">в избранное</button>
+                <button class="button-favorite catalog__button button" type="button">в избранное</button>
                 <span class="stars catalog__button stars3"></span>
                 <span class="rating catalog__button button">Рейтинг: 6,9</span>
               </li>
@@ -202,13 +199,13 @@
                 <span class="catalog-hotels__type-house">Гостиница</span>
                 <span class="catalog-hotels__price">От 1500 ₽</span>
                 <a class="link-more catalog__button button" href="#">подробнее</a>
-                <button class="button-favorite catalog__button button">в избранное</button>
+                <button class="button-favorite catalog__button button" type="button">в избранное</button>
                 <span class="stars catalog__button stars2"></span>
                 <span class="rating catalog__button button">Рейтинг: 5,0</span>
               </li>
             </ul>
 
-            <ul class="pagination">
+            <!-- <ul class="pagination">
               <li class="pagination__item pagination__item-current">
                 <a class="pagination__link pagination__link-current" href="#">1</a>
               </li>
@@ -226,6 +223,27 @@
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#">10</a>
+              </li>
+            </ul> -->
+
+            <ul class="pagination">
+              <li class="pagination__item pagination__item-current">
+                <button class="pagination__button" type="button">1</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button" type="button">2</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button" type="button">3</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button" type="button">4</button>
+              </li>
+              <li class="pagination__item pagination__item-more">
+                <button class="pagination__button" type="button">...</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__button" type="button">10</button>
               </li>
             </ul>
 
