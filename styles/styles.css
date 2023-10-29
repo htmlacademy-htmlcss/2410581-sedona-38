@@ -932,7 +932,7 @@ body {
 .catalog-hotels__item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: 212px auto min-content 36px 37px;
+  grid-template-rows: 212px 1fr;
   grid-template-areas:
     "image image"
     "title title"
