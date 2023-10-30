@@ -73,20 +73,23 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <input class="control__input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control__input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="checkbox" name="wifi">
-                      Wi-Fi
+                      <input class="control__input visually-hidden" type="checkbox" name="wifi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -97,20 +100,23 @@
                 <ul class="filters__list">
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="radio" name="type-of-house" value="hotel" checked>
-                      Гостиница
+                      <input class="control__input visually-hidden" type="radio" name="type-of-house" value="hotel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="radio" name="type-of-house" value="motel">
-                      Мотель
+                      <input class="control__input visually-hidden" type="radio" name="type-of-house" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filters__item">
                     <label class="control">
-                      <input class="control__input" type="radio" name="type-of-house" value="apartment">
-                      Апартаменты
+                      <input class="control__input visually-hidden" type="radio" name="type-of-house" value="apartment">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -119,12 +125,23 @@
               <fieldset class="filters__group filters__group-price">
                 <legend class="filters__title">Стоимость, ₽:</legend>
                 <p class="filters__price-group">
-                  <input type="text" id="price-from" name="price-from" placeholder="0">
+                  <input type="number" id="price-from" name="price-from" placeholder="0">
                   <label for="price-from">от</label>
-                  <input type="text" id="price-to" name="price-to" placeholder="9000">
+                  <input type="number" id="price-to" name="price-to" placeholder="9000">
                   <label for="price-to">до</label>
                 </p>
-                <input type="range" min="0" max="10000" step="1000" value="9000">
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px;">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
 
               <div class="filters__group-buttons">
@@ -275,8 +292,73 @@
 
         </div>
       </footer>
+      <div class="modal-container modal-container-close">
 
-    </div>
+        <div class="modal modal-search">
+
+          <button class="modal-search__button-close" type="button">
+            <span class="visually-hidden">Закрыть окно поиска</span>
+          </button>
+
+          <section class="modal-search__content">
+
+            <h2 class="modal-search__title">Поиск гостиницы в Седоне</h2>
+
+            <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+
+                <label class="form-search__label form-search__label-arrival" for="arrival-date">Дата Заезда:</label>
+
+                <div class="form-search__label-wrapper">
+                  <input class="form-search__input form-search__input-arrival" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                  <button class="form-search__button-input" type="button">
+                    <span class="visually-hidden">Выбор даты</span>
+                  </button>
+                </div>
+
+                <span class="form-search-hint form-search__error">Мы не можем отправить вас в прошлое.</span>
+
+                <label class="form-search__label form-search__label-departure" for="departure-date">Дата выезда:</label>
+
+                <div class="form-search__label-wrapper">
+                  <input class="form-search__input form-search__input-departure" type="text" id="departure-date" name="departure-date" value="1 сентября 2023">
+                  <button class="form-search__button-input" type="button">
+                    <span class="visually-hidden">Выбор даты</span>
+                  </button>
+                </div>
+
+                <span class="form-search-hint">На эти даты есть свободные номера. Пока есть.</span>
+
+                <label class="form-search__label form-search__label-adults" for="adults-quantity">Взрослые:</label>
+
+                <div class="form-search__input-adults-wrapper">
+                  <button class="button-input button-minus button-adults-quantity-minus" type="button"></button>
+                  <input class="form-search__input form-search__input-adults" type="number" id="adults-quantity" name="adults-quantity" value="2">
+                  <button class="button-input button-plus button-adults-quantity-plus" type="button"></button>
+                </div>
+
+                <label class="form-search__label form-search__label-children" for="children-quantity">
+                  Дети:
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button"></button>
+                    <span class="tolltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </label>
+
+                <div class="form-search__label-children-wrapper">
+                  <button class="button-input button-minus button-children-quantity-minus" type="button"></button>
+                  <input class="form-search__input form-search__input-children" type="number" id="children-quantity" name="children-quantity" value="2">
+                  <button class="button-input button-plus button-children-quantity-plus" type="button"></button>
+                </div>
+
+              <button class="button form-search__button-submit" type="submit">Найти</button>
+            </form>
+          </section>
+
+        </div>
+
+      </div>
+
+      <script src="scripts/scripts.js"></script>
 
   </body>
 </html>
