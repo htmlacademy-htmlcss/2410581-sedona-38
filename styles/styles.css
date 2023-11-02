@@ -121,8 +121,7 @@ body {
   color: #000000;
   text-transform: capitalize;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     opacity: 0.7;
     transition: all 0.3s ease 0s;
   }
@@ -148,8 +147,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-brown-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -428,8 +426,7 @@ body {
 
 .search__button {
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-brown-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -502,8 +499,7 @@ body {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-blue-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -584,8 +580,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #000000;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     color: #756157;
     transition: all 0.3s ease 0s;
   }
@@ -604,8 +599,7 @@ body {
 
 .main-footer__html-logo {
   display: block;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     fill: #756157;
     transition: all 0.3s ease 0s;
   }
@@ -645,6 +639,7 @@ body {
   margin: 0;
   margin-bottom: 41px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
@@ -733,8 +728,7 @@ body {
   border: none;
   box-sizing: border-box;
   appearance: textfield;
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
   }
@@ -780,8 +774,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     outline: 3px solid #83B3D3;
   }
   &:active {
@@ -891,8 +884,7 @@ body {
   margin-top: 56px;
   margin-bottom: 32px;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-blue-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -983,8 +975,7 @@ body {
   box-sizing: border-box;
   transition: all 0.3s ease 0s;
   appearance: none;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     outline: 2px solid #68A2CA;
     transition: all 0.3s ease 0s;
   }
@@ -1136,8 +1127,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-brown-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -1156,8 +1146,7 @@ body {
   font-weight: 700;
   background-color: #82B3D3;
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-blue-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -1252,8 +1241,7 @@ body {
   padding: 8px 18px;
   background-color: var(--button-green-still-active);
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-green-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -1274,8 +1262,7 @@ body {
 }
 
 .pagination__item:not(.pagination__item-current):not(.pagination__item-more) .pagination__button {
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-blue-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -1373,8 +1360,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  &::after,
-  &::before {
+  &::after, &::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1389,8 +1375,7 @@ body {
   &::before {
     transform: translateX(-50%) rotate(45deg);
   }
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: #E6E6E6;
     transition: all 0.3s ease 0s;
   }
@@ -1401,8 +1386,7 @@ body {
   }
   &:disabled {
     pointer-events: none;
-    &:after,
-    &:before {
+    &:after, &:before {
       background-color: rgba(0, 0, 0, 0.3);
     }
   }
@@ -1471,8 +1455,7 @@ body {
     background-color: #ffffff;
     content: "";
   }
-  &:hover,
-  &:focus-visible {
+  &:hover, &:focus-visible {
     & + .tolltip-text {
       opacity: 1;
       pointer-events: all;
@@ -1576,8 +1559,7 @@ body {
   border-radius: 10px;
   background-color: var(--button-find-still);
   transition: all 0.3s ease 0s;
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: var(--button-blue-hover-focus);
     transition: all 0.3s ease 0s;
   }
@@ -1607,22 +1589,19 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease 0s;
   &:hover {
-    &::after,
-    &::before {
+    &::after, &::before {
       background-color: #000000;
       transition: all 0.3s ease 0s;
     }
   }
   &:focus-visible {
     outline: 3px solid #82B3D3;
-    &::after,
-    &::before {
+    &::after, &::before {
       background-color: #000000;
     }
   }
   &:active {
-    &::after,
-    &::before {
+    &::after, &::before {
       background-color: rgba(117, 97, 87, 0.3);
     }
   }
@@ -1671,8 +1650,7 @@ body {
   border-radius: 4px;
   text-align: center;
   appearance: none;
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
+  &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
   }
