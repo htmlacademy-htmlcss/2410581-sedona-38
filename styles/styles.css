@@ -1060,8 +1060,11 @@ body {
   box-sizing: border-box;
 }
 
-.catalog-hotels__image {
+.catalog-hotels__image-link {
   grid-area: image;
+}
+
+.catalog-hotels__image {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -1087,12 +1090,18 @@ body {
   bottom: -39px;
 }
 
-.catalog-hotels__title {
+.catalog-hotels__title-link {
   grid-area: title;
-  margin: 0;
+  font: inherit;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-hotels__title {
+  margin: 0;
 }
 
 .catalog-hotels__type-house {
