@@ -10,9 +10,6 @@ let mainHeaderButton = document.querySelector(".main-header__button");
 let modalContainer = document.querySelector(".modal-container");
 let modalSearchButtonClose = document.querySelector(".modal-search__button-close");
 
-
-
-
 buttonAdultsQuantityMinus.onclick = function() {
   if (formSearchInputAdults.value !== "0" & formSearchInputAdults.value !== "") {
     formSearchInputAdults.value = +formSearchInputAdults.value - 1;

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -70,7 +72,7 @@
             <h2 class="visually-hidden">Преимущества</h2>
 
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item1">
+              <li class="advantages__item advantages__item1 advantages__item_long">
                 <div class="advantages__content">
                   <h3 class="advantages__title">Настоящий городок</h3>
                   <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -93,12 +95,12 @@
                 <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
 
-              <li class="advantages__item advantages__item5">
-                <img class="advantages__image" src="images/advantages/bridge.jpg" alt="Вид на естественный каменный мост" width="800" height="384">
+              <li class="advantages__item advantages__item5 advantages__item_long">
                 <div class="advantages__content">
                   <h3 class="advantages__title">Там есть <br> мост дьявола</h3>
                   <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
+                <img class="advantages__image" src="images/advantages/bridge.jpg" alt="Вид на естественный каменный мост" width="800" height="384">
               </li>
             </ul>
 
@@ -207,7 +209,7 @@
               <label class="form-search__label form-search__label-arrival" for="arrival-date">Дата Заезда:</label>
 
               <div class="form-search__label-wrapper">
-                <input class="form-search__input form-search__input-arrival" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                <input class="form-search__input form-search__input-arrival" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
                 <button class="form-search__button-input" type="button">
                   <span class="visually-hidden">Выбор даты</span>
                 </button>
@@ -218,7 +220,7 @@
               <label class="form-search__label form-search__label-departure" for="departure-date">Дата Выезда:</label>
 
               <div class="form-search__label-wrapper">
-                <input class="form-search__input form-search__input-departure" type="text" id="departure-date" name="departure-date" value="1 сентября 2023">
+                <input class="form-search__input form-search__input-departure" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
                 <button class="form-search__button-input" type="button">
                   <span class="visually-hidden">Выбор даты</span>
                 </button>
