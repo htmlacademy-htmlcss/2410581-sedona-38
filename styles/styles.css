@@ -342,11 +342,11 @@ body {
   object-fit: cover;
 }
 
-.advantages__item:not(.advantages__item1):not(.advantages__item5):nth-child(even) {
+.advantages__item:not(.advantages__item_long):nth-child(even) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages__item:not(.advantages__item1):not(.advantages__item5):nth-child(odd) {
+.advantages__item:not(.advantages__item_long):nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -758,10 +758,10 @@ body {
   border: none;
   box-sizing: border-box;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
   &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     margin: 0;
   }
   &:focus-visible {
@@ -1010,6 +1010,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  background-color: #ffffff;
   background-image: url("../images/sorting/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
@@ -1019,7 +1020,7 @@ body {
   box-sizing: border-box;
   transition: all 0.3s ease 0s;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   &:hover, &:focus {
     outline: 2px solid #68a2ca;
     transition: all 0.3s ease 0s;
@@ -1084,7 +1085,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 212px 1fr;
-      grid-template-areas:
+  grid-template-areas:
     "image image"
     "title title"
     "type price"
@@ -1737,11 +1738,11 @@ body {
   padding-right: 40px;
   border-radius: 4px;
   text-align: center;
-  -webkit-appearance: none;
-          appearance: none;
+  -webkit-appearance: textfield;
+  appearance: textfield;
   &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
     -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     margin: 0;
   }
 }

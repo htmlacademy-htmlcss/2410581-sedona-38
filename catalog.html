@@ -50,9 +50,9 @@
         </div>
       </header>
 
-      <main class="main-catalog" data-test="catalog">
+      <main class="main-catalog" data-test="main">
 
-        <section class="filter">
+        <section class="filter" data-test="filter">
           <div class="filter__container">
 
             <h1 class="filter__title">Гостиницы Седоны</h1>
@@ -155,7 +155,7 @@
           </div>
         </section>
 
-        <section class="gallery-hotels">
+        <section class="gallery-hotels" data-test="catalog">
           <div class="gallery-hotels__container">
 
             <div class="sorting">
@@ -264,7 +264,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe__container subscribe__container-catalog">
             <h2 class="subscribe__title subscribe__title-catalog">Подпишитесь на рассылку</h2>
             <p class="subscribe__text subscribe__text-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -277,7 +277,7 @@
 
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <div class="main-footer__container">
 
           <h2 class="visually-hidden">Ссылки на социальные сети</h2>
@@ -327,7 +327,7 @@
                 <label class="form-search__label form-search__label-arrival" for="arrival-date">Дата Заезда:</label>
 
                 <div class="form-search__label-wrapper">
-                  <input class="form-search__input form-search__input-arrival" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+                  <input class="form-search__input form-search__input-arrival" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
                   <button class="form-search__button-input" type="button">
                     <span class="visually-hidden">Выбор даты</span>
                   </button>
@@ -338,7 +338,7 @@
                 <label class="form-search__label form-search__label-departure" for="departure-date">Дата Выезда:</label>
 
                 <div class="form-search__label-wrapper">
-                  <input class="form-search__input form-search__input-departure" type="text" id="departure-date" name="departure-date" value="1 сентября 2023">
+                  <input class="form-search__input form-search__input-departure" type="text" id="departure-date" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
                   <button class="form-search__button-input" type="button">
                     <span class="visually-hidden">Выбор даты</span>
                   </button>
