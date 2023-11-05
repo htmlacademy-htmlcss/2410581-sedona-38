@@ -349,24 +349,31 @@
                 <label class="form-search__label form-search__label-adults" for="adults-quantity">Взрослые:</label>
 
                 <div class="form-search__input-adults-wrapper">
-                  <button class="button-input button-minus button-adults-quantity-minus" type="button"></button>
+                  <button class="button-input button-minus button-adults-quantity-minus" type="button">
+                    <span class="visually-hidden">уменьшить количество взрослых</span>
+                  </button>
                   <input class="form-search__input form-search__input-adults" type="number" id="adults-quantity" name="adults-quantity" value="2">
-                  <button class="button-input button-plus button-adults-quantity-plus" type="button"></button>
+                  <button class="button-input button-plus button-adults-quantity-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых</span>
+                  </button>
                 </div>
 
                 <span class="form-label">
                   <label class="form-search__label form-search__label-children" for="children-quantity">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button"></button>
-                    <span class="tolltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date"></button>
+                    <span class="tolltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
 
-
                 <div class="form-search__label-children-wrapper">
-                  <button class="button-input button-minus button-children-quantity-minus" type="button"></button>
+                  <button class="button-input button-minus button-children-quantity-minus" type="button">
+                    <span class="visually-hidden">Уменьшить колчиество детей</span>
+                  </button>
                   <input class="form-search__input form-search__input-children" type="number" id="children-quantity" name="children-quantity" value="2">
-                  <button class="button-input button-plus button-children-quantity-plus" type="button"></button>
+                  <button class="button-input button-plus button-children-quantity-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество детей</span>
+                  </button>
                 </div>
 
               <button class="button form-search__button-submit" type="submit">Найти</button>
