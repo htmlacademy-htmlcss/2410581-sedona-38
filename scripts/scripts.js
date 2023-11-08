@@ -10,9 +10,6 @@ let mainHeaderButton = document.querySelector(".main-header__button");
 let modalContainer = document.querySelector(".modal-container");
 let modalSearchButtonClose = document.querySelector(".modal-search__button-close");
 
-
-
-
 buttonAdultsQuantityMinus.onclick = function() {
   if (formSearchInputAdults.value !== "0" & formSearchInputAdults.value !== "") {
     formSearchInputAdults.value = +formSearchInputAdults.value - 1;
@@ -33,17 +30,14 @@ buttonChildrenQuantityPlus.onclick = function() {
 
 mainHeaderButton.onclick = function() {
   modalContainer.classList.remove("modal-container-close");
-  window.onscroll = () => { window.scroll(0, 0); };
 }
 
 modalSearchButtonClose.onclick = function() {
   modalContainer.classList.add("modal-container-close");
-  window.onscroll = () => { window.scroll(); };
 }
 
 document.addEventListener("click", (e) => {
   if (e.target === modalContainer) {
     modalContainer.classList.add("modal-container-close");
-    window.onscroll = () => { window.scroll(); };
   }
 });
